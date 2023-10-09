@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/gray_bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/dimen_16dp"/>
+
+    <!--    red block-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/redCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardHeight"
+        android:layout_margin="@dimen/dimen_16dp"
+        app:cardBackgroundColor="@color/lightRed"
+        app:cardElevation="@dimen/dimen_16dp"
+        app:cardCornerRadius="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <TextView
+        android:id="@+id/sos_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:elevation="@dimen/elevation_8dp"
+        app:layout_constraintStart_toStartOf="@id/redCard"
+        app:layout_constraintTop_toTopOf="@id/redCard"
+        android:text="@string/sos"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sos_msg"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_8dp"
+        android:text="@string/sos_msg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_16sp"
+        app:layout_constraintTop_toBottomOf="@id/sos_txt"
+        app:layout_constraintStart_toStartOf="@id/redCard"
+        app:layout_constraintEnd_toStartOf="@id/sos_img" />
+
+    <ImageView
+        android:id="@+id/sos_img"
+        android:src="@drawable/ic_sos"
+        android:layout_width="@dimen/img_w_110dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:layout_height="@dimen/img_h_150dp"
+        android:elevation="@dimen/elevation_8dp"
+        app:layout_constraintTop_toTopOf="@id/redCard"
+        app:layout_constraintBottom_toBottomOf="@id/redCard"
+        app:layout_constraintEnd_toEndOf="@id/redCard"/>
+
+    <!--    green block -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/greenCard"
+        android:layout_margin="@dimen/dimen_16dp"
+        app:cardElevation="@dimen/dimen_16dp"
+        app:cardBackgroundColor="@color/lightGreen"
+        app:cardCornerRadius="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@+id/redCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardHeight" />
+
+    <TextView
+        android:id="@+id/gaurd_txt"
+        android:textSize="@dimen/txt_24sp"
+        android:elevation="@dimen/elevation_8dp"
+        app:layout_constraintStart_toStartOf="@id/greenCard"
+        app:layout_constraintTop_toTopOf="@id/greenCard"
+        android:text="@string/gaurd"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/gaurd_msg"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_8dp"
+        android:text="@string/gaurd_msg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_16sp"
+        app:layout_constraintTop_toBottomOf="@id/gaurd_txt"
+        app:layout_constraintStart_toStartOf="@id/greenCard"
+        app:layout_constraintEnd_toStartOf="@id/gaurd_img"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/gaurd_img"
+        android:src="@drawable/ic_police"
+        android:layout_width="@dimen/img_w_110dp"
+        android:layout_margin="16dp"
+        android:layout_height="@dimen/img_h_150dp"
+        android:elevation="@dimen/elevation_8dp"
+        app:layout_constraintTop_toTopOf="@id/greenCard"
+        app:layout_constraintBottom_toBottomOf="@id/greenCard"
+        app:layout_constraintEnd_toEndOf="@id/greenCard"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
