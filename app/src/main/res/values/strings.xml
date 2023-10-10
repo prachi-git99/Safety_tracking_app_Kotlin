@@ -12,4 +12,10 @@
     <string name="my_family_txt">My Family</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address">9th buildind, 2nd floor, maldiv road, manali 9th buildind, 2nd floor 9th buildind, 2nd floor,</string>
+    <string name="card_time">16:40</string>
+
+
+
+    <string name="google_map_api_key">AIzaSyCPQXzjjc5ISE_EPgmeBwXUzM3IDoqDuEk</string>
 </resources>

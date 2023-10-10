@@ -8,4 +8,8 @@
     <dimen name="img_w_110dp">110dp</dimen>
     <dimen name="img_h_150dp">150dp</dimen>
     <dimen name="fam_card_120dp">120dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_180dp">180dp</dimen>
+    <dimen name="dimen_64dp">64dp</dimen>
 </resources>

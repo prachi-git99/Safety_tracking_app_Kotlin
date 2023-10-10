@@ -1,0 +1,10 @@
+recycler view:
+1. recycler view declair karna hai xml file mai
+2.uske andar "list item " m item define kar dena h
+3.ab vo item k andar apna jo bhi UI bnana h vo bnao
+4.Recycler ka adapter bnana h
+5.view holder class bnani h
+6. inflate karna h ui jo bnani thi
+7. home fragment  m list of data define karna
+8. uske liye list od data k liye model bnana h jo data set krega
+9.set karna h adapter ko apne recyclet view k saath
